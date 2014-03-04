@@ -74,7 +74,7 @@ Jx().$package(function(J){
 	}
 	var startTiming = function(t){
 		if(!isTiming){
-			console.log(t)
+			//console.log(t)
 			var plan = planStart(t);
 
 			isTiming=true;
@@ -187,7 +187,7 @@ Jx().$package(function(J){
 	}
 
 	var showTaskList = function(taskData){
-		console.dir(taskData.taskList);
+		//console.dir(taskData.taskList);
 		var taskClassName = "";
 		var taskCount = 0;
 		var li;
@@ -197,7 +197,7 @@ Jx().$package(function(J){
 		for(var taskId in taskData.taskList){
 			taskCount++;
 			var task = taskData.taskList[taskId];
-			console.dir(task)
+			//console.dir(task)
 			li = $D.node("li");
 			$D.addClass(li, "alert");
 			var taskDetail = 
